@@ -39,7 +39,10 @@ class FlightsCrawlerSpider(CrawlSpider):
     }
     allowed_domains = ["flightstats.com"]
     # In "start_urls" INSERT THE URL FROM THE FLIGHT DESIRED THAT YOU WANT TO EXTRACT:
-    start_urls = ["https://www.flightstats.com/v2/flight-tracker/departures/MEX/?year=2021&month=2&date=6&hour=0"]
+    start_urls = [
+        "https://www.flightstats.com/v2/flight-tracker/departures/MEX/?year=2021&month=2&date=6&hour=0"
+        #"https://www.flightstats.com/v2/flight-tracker/departures/MEX/?year=2021&month=2&date=7&hour=0"
+    ] # IF YOU WISH YOU CAN UNCOMMENT THE LINK ABOVE (OR ADD ANOTHER ONE), AND SEE THAT THIS SCRIPT WORKS :)
 
     def creating_driver(self, url):
 
