@@ -47,7 +47,7 @@ class FlightsCrawlerSpider(CrawlSpider):
         ua = "user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/\
                 88.0.4324.96 Chrome/88.0.4324.96 Safari/537.36"
         opts.add_argument(ua)
-        driver = webdriver.Chrome(".././chromedriver.exe", options=opts)
+        driver = webdriver.Chrome("./chromedriver.exe", options=opts)
         driver.get(url)
         return driver
 
