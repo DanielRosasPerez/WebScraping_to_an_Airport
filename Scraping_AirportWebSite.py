@@ -233,7 +233,7 @@ class FlightsCrawlerSpider(CrawlSpider):
                     # number of pages. We will find it until it appears, that's why we have assigned "last_page"==1000,
                     # to be sure that we will arrive to the maximum number of existing pages. Once we retrieve it, we
                     # won't enter to this "if" again.
-                    last_page = WebDriverWait(main_driver, 10).until(
+                    last_page = WebDriverWait(main_driver, 3).until(
                         EC.presence_of_element_located((By.XPATH, "//div[contains(@class, 'table__PaginationWrapper')]\
                                     //div[contains(@class, 'pagination__PageNavigationContainer')]/div[last()-2]/span"))
                     )
