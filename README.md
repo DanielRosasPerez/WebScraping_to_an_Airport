@@ -13,4 +13,4 @@ https://www.flightstats.com/v2/flight-tracker/departures/MEX/?year=2021&month=2&
 
 **ONCE YOU CHANGE THAT, YOU SHOULD SEE SOMETHING LIKE THIS:**  
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of an AirportBoard](https://github.com/DanielRosasPerez/Captura.png)
